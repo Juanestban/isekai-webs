@@ -21,7 +21,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "packages/meli/*": ["./src/packages/mercado-libre/*"],
+      "packages/amazon/*": ["./src/packages/amazon/*"]
+    }
   },
   "include": ["src"]
 }
