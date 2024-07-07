@@ -1,6 +1,7 @@
 import { Meta, StoryFn } from '@storybook/react';
 import { fn } from '@storybook/test';
 
+import { Wrapper } from '@/config/Wrapper';
 import { getContext } from '@/config/decoratorContext';
 import { ThemeProvider } from 'packages/meli/components/ThemeProvider';
 import { Link, type LinkProps } from './Link';
@@ -37,4 +38,48 @@ Main.args = {
   external: false,
   variant: 'primary',
   children: 'Link based on Mercado Libre',
+};
+
+export const Size: StoryFn<LinkProps> = ({ to, variant, external }) => {
+  return (
+    <Wrapper flexDirection="column">
+      <Link to={to} variant={variant} size="xs" external={external}>
+        link size: xs
+      </Link>
+      <Link to={to} variant={variant} size="sm" external={external}>
+        link size: sm
+      </Link>
+      <Link to={to} variant={variant} size="md" external={external}>
+        link size: md
+      </Link>
+      <Link to={to} variant={variant} size="lg" external={external}>
+        link size: lg
+      </Link>
+    </Wrapper>
+  );
+};
+
+Size.args = {
+  to: '/',
+  variant: 'primary',
+  external: false,
+};
+
+export const Variant: StoryFn<LinkProps> = ({ to, size, external }) => {
+  return (
+    <Wrapper>
+      <Link to={to} variant="primary" size={size} external={external}>
+        link variant: primary
+      </Link>
+      <Link to={to} variant="secondary" size={size} external={external}>
+        link variant: secondary
+      </Link>
+    </Wrapper>
+  );
+};
+
+Variant.args = {
+  to: '/',
+  size: 'md',
+  external: false,
 };
