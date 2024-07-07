@@ -1,11 +1,11 @@
-/** reset css file */
+/* reset css file */
 @import url('../../../styles/reset.css');
 
-/** typography */
+/* typography */
 @import url('./typography.css');
 
 :root {
-  /** font-size */
+  /* font-size */
   --font-size-xs: 13px;
   --font-size-sm: 14px;
   --font-size-md: 15px;
@@ -16,4 +16,17 @@
   --font-size-4xl: 24px;
   --font-size-5xl: 26px;
   --font-size-6xl: 32px;
+
+  /* font-weight */
+  --font-weight-thin: 300;
+  --font-weight-normal: 400;
+  --font-weight-semi-bold: 600;
+}
+
+body {
+  /* text colors */
+  --font-color-black: #000;
+  --font-color-white: #fff;
+  --font-color-green: #00a650;
+  --font-color-blue: #3483fa;
 }
