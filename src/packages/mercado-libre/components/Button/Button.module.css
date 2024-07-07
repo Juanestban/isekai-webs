@@ -78,6 +78,10 @@
       background-color: var(--ghost-color-hover);
     }
 
+    &.secondary:hover {
+      background-color: transparent;
+    }
+
     &.disabled {
       background-color: var(--disabled-color);
       color: var(--disabled-font-color);
