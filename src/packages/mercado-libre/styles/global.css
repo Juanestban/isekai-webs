@@ -30,3 +30,33 @@ body {
   --font-color-green: #00a650;
   --font-color-blue: #3483fa;
 }
+
+/* weight */
+.font-thin {
+  font-weight: var(--font-weight-thin);
+}
+
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-semi-bold {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+/* color */
+.font-black {
+  color: var(--font-color-black);
+}
+
+.font-white {
+  color: var(--font-color-white);
+}
+
+.font-green {
+  color: var(--font-color-green);
+}
+
+.font-blue {
+  color: var(--font-color-blue);
+}

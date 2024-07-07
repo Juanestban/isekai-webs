@@ -33,7 +33,7 @@ const Text: FC<TextProps> = ({
   return (
     <Wrapper
       ref={innerRef}
-      className={clsx(s.text, s[`font-${size}`], s[`font-${weight}`], s[`font-${color}`])}
+      className={clsx(s.text, s[`font-${size}`], `font-${weight}`, `font-${color}`)}
       {...(props as any)}
     >
       {children}
