@@ -14,7 +14,7 @@ const meta = {
   decorators: [getContext(ThemeProvider)],
   tags: ['autodocs'],
   argTypes: {
-    variant: { control: 'select', options: ['solid'] },
+    variant: { control: 'select', options: ['solid', 'ghost'] },
     role: { control: 'select', options: ['primary', 'secondary', 'tertiary', 'cuaternary'] },
     size: { control: { type: 'select' }, options: ['xs', 'sm', 'md', 'lg'] },
     fullWidth: { control: 'boolean' },
@@ -22,7 +22,7 @@ const meta = {
     isDisabled: { control: 'boolean' },
   },
   args: { onClick: fn() },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<ButtonProps>;
 
 export default meta;
 

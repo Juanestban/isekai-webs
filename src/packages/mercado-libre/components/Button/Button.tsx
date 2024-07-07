@@ -10,7 +10,7 @@ type PrimitiveButton = Omit<ComponentProps<'button'>, 'ref' | 'disabled' | 'role
 
 interface ButtonProps extends PrimitiveButton {
   innerRef?: Ref<HTMLButtonElement>;
-  variant?: 'solid';
+  variant?: 'solid' | 'ghost';
   role?: 'primary' | 'secondry' | 'tertiary';
   size?: TextSize;
   isDisabled?: boolean;

@@ -67,6 +67,24 @@
     }
   }
 
+  &.ghost {
+    background-color: transparent;
+
+    .text {
+      color: var(--font-color-blue);
+    }
+
+    &:hover {
+      background-color: var(--ghost-color-hover);
+    }
+
+    &.disabled {
+      background-color: var(--disabled-color);
+      color: var(--disabled-font-color);
+      pointer-events: none;
+    }
+  }
+
   &:hover {
     transition:
       background-color 500ms ease,
