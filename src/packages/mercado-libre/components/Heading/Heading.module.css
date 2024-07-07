@@ -1,0 +1,29 @@
+.heading {
+  &.font-lg {
+    font-size: var(--font-size-lg);
+  }
+
+  &.font-xl {
+    font-size: var(--font-size-xl);
+  }
+
+  &.font-2xl {
+    font-size: var(--font-size-2xl);
+  }
+
+  &.font-3xl {
+    font-size: var(--font-size-3xl);
+  }
+
+  &.font-4xl {
+    font-size: var(--font-size-4xl);
+  }
+
+  &.font-5xl {
+    font-size: var(--font-size-5xl);
+  }
+
+  &.font-6xl {
+    font-size: var(--font-size-6xl);
+  }
+}
