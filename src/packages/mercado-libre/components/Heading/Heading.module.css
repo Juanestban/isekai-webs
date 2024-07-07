@@ -1,4 +1,6 @@
 .heading {
+  font-family: var(--font-family-proxima-nova);
+
   &.font-lg {
     font-size: var(--font-size-lg);
   }

@@ -1,4 +1,6 @@
 .text {
+  font-family: var(--font-family-proxima-nova);
+
   /* size */
   &.font-xs {
     font-size: var(--font-size-xs);
