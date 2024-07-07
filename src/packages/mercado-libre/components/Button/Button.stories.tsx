@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
+import { getContext } from '@/config/decoratorContext';
+import { ThemeProvider } from 'packages/meli/components/ThemeProvider';
 import { Button } from './Button';
 
 const meta = {
@@ -9,6 +11,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+  decorators: [getContext(ThemeProvider)],
   tags: ['autodocs'],
   argTypes: {
     backgroundColor: { control: 'color' },
