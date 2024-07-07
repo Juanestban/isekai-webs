@@ -44,7 +44,9 @@ body {
   --tertiary-color: rgba(255, 255, 255, 0.2);
   --tertiary-font-color: var(--font-color-white);
   --cuaternary-color: #fff;
+  --cuaternary-color-hover: var(--font-color-blue);
   --cuaternary-border-color: #e6e6e6;
+  --cuaternary-border-color-hover: var(--font-color-blue);
 
   --disabled-color: #ccc;
   --disabled-font-color: gray;

@@ -1,47 +1,59 @@
-import './Button.css';
+import { AriaRole, ComponentProps, Ref } from 'react';
+import clsx from 'clsx';
 
-interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
+import { TextSize } from 'packages/meli/models';
+import { Text } from '../Text';
+
+import s from './Button.module.css';
+
+type PrimitiveButton = Omit<ComponentProps<'button'>, 'ref' | 'disabled' | 'role'>;
+
+interface ButtonProps extends PrimitiveButton {
+  innerRef?: Ref<HTMLButtonElement>;
+  variant?: 'solid';
+  role?: 'primary' | 'secondry' | 'tertiary';
+  size?: TextSize;
+  isDisabled?: boolean;
+  ariaRole?: AriaRole;
+  rounded?: boolean;
+  fullWidth?: boolean;
 }
 
-/**
- * Primary UI component for user interaction
- */
 const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
+  innerRef,
+  variant = 'solid',
+  role = 'primary',
+  size = 'md',
+  fullWidth,
+  rounded,
+  type = 'button',
+  isDisabled,
+  className,
+  ariaRole,
+  children,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'primary' : 'secondary';
   return (
     <button
-      type="button"
-      className={['storybook-button', size, mode].join(' ')}
-      style={{ backgroundColor }}
+      ref={innerRef}
+      type={type}
+      className={clsx(
+        s.button,
+        s[variant],
+        s[role],
+        s[`size-${size}`],
+        fullWidth && s.fullWidth,
+        rounded && s.rounded,
+        isDisabled && s.disabled,
+        className,
+      )}
+      role={ariaRole}
+      disabled={isDisabled}
       {...props}
     >
-      {label}
+      <Text as="span" className={s.text} size={size} weight="semi-bold">
+        {children}
+      </Text>
     </button>
   );
 };
