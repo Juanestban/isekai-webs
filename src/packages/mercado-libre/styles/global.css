@@ -3,3 +3,17 @@
 
 /** typography */
 @import url('./typography.css');
+
+:root {
+  /** font-size */
+  --font-size-xs: 13px;
+  --font-size-sm: 14px;
+  --font-size-md: 15px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 22px;
+  --font-size-4xl: 24px;
+  --font-size-5xl: 26px;
+  --font-size-6xl: 32px;
+}
