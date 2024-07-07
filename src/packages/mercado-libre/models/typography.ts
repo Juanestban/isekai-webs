@@ -6,4 +6,4 @@ export type HeadingSize = Exclude<Size, 'xs' | 'sm' | 'md'>;
 
 export type Weight = 'thin' | 'normal' | 'semi-bold';
 
-export type Color = 'black' | 'white' | 'green' | 'blue';
+export type Color = 'base' | 'black' | 'white' | 'green' | 'blue';

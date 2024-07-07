@@ -28,10 +28,26 @@
 
 body {
   /* text colors */
+  --font-color-base: #666;
   --font-color-black: #000;
   --font-color-white: #fff;
   --font-color-green: #00a650;
   --font-color-blue: #3483fa;
+
+  /* button colors */
+  --primary-color: var(--font-color-blue);
+  --primary-color-hover: #2968c8;
+  --primary-font-color: var(--font-color-white);
+  --secondary-color: rgba(65, 137, 230, 0.15);
+  --secondary-color-hover: rgba(65, 137, 230, 0.2);
+  --secondary-font-color: var(--font-color-blue);
+  --tertiary-color: rgba(255, 255, 255, 0.2);
+  --tertiary-font-color: var(--font-color-white);
+  --cuaternary-color: #fff;
+  --cuaternary-border-color: #e6e6e6;
+
+  --disabled-color: #ccc;
+  --disabled-font-color: gray;
 }
 
 /* weight */
@@ -48,6 +64,10 @@ body {
 }
 
 /* color */
+.font-base {
+  color: var(--font-color-base);
+}
+
 .font-black {
   color: var(--font-color-black);
 }

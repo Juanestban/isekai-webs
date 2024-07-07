@@ -20,7 +20,7 @@ const meta = {
     as: { control: { type: 'select' }, options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h6'] },
     size: { control: { type: 'select' }, options: sizes },
     weight: { control: { type: 'select' }, options: ['thin', 'normal', 'semi-bold'] },
-    color: { control: { type: 'select' }, options: ['black', 'white', 'green', 'blue'] },
+    color: { control: { type: 'select' }, options: ['base', 'black', 'white', 'green', 'blue'] },
   },
 } satisfies Meta<HeadingProps>;
 
@@ -85,6 +85,9 @@ FontWeight.args = {
 export const FontColor: StoryFn<HeadingProps> = ({ as, size, weight }) => {
   return (
     <Wrapper>
+      <Heading as={as} size={size} weight={weight} color="base">
+        Heading font color: base
+      </Heading>
       <Heading as={as} size={size} weight={weight} color="black">
         Heading font color: black
       </Heading>

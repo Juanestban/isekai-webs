@@ -17,7 +17,7 @@ const meta = {
     as: { control: { type: 'select' }, options: ['p', 'span', 'details', 'b', 'i', 'caption'] },
     size: { control: { type: 'select' }, options: ['xs', 'sm', 'md', 'lg'] },
     weight: { control: { type: 'select' }, options: ['thin', 'normal', 'semi-bold'] },
-    color: { control: { type: 'select' }, options: ['black', 'white', 'green', 'blue'] },
+    color: { control: { type: 'select' }, options: ['base', 'black', 'white', 'green', 'blue'] },
   },
 } satisfies Meta<TextProps>;
 
@@ -89,6 +89,9 @@ FontWeight.args = {
 export const FontColor: StoryFn<TextProps> = ({ as, size, weight }) => {
   return (
     <Wrapper>
+      <Text as={as} size={size} weight={weight} color="base">
+        font-color: base
+      </Text>
       <Text as={as} size={size} weight={weight} color="black">
         font-color: black
       </Text>
