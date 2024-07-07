@@ -26,6 +26,7 @@ const Text: FC<TextProps> = ({
   size = 'md',
   weight = 'normal',
   color = 'black',
+  className,
   children,
   ...props
 }) => {
@@ -33,7 +34,7 @@ const Text: FC<TextProps> = ({
   return (
     <Wrapper
       ref={innerRef}
-      className={clsx(s.text, s[`font-${size}`], `font-${weight}`, `font-${color}`)}
+      className={clsx(s.text, s[`font-${size}`], `font-${weight}`, `font-${color}`, className)}
       {...(props as any)}
     >
       {children}

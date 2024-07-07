@@ -23,6 +23,7 @@ const Heading: FC<HeadingProps> = ({
   size = 'lg',
   weight = 'normal',
   color = 'black',
+  className,
   children,
   ...props
 }) => {
@@ -30,7 +31,7 @@ const Heading: FC<HeadingProps> = ({
   return (
     <Wrapper
       ref={innerRef}
-      className={clsx(s.heading, s[`font-${size}`], `font-${weight}`, `font-${color}`)}
+      className={clsx(s.heading, s[`font-${size}`], `font-${weight}`, `font-${color}`, className)}
       {...(props as any)}
     >
       {children}
