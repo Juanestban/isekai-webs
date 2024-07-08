@@ -54,6 +54,9 @@ body {
 
   --focus-box-shadow: 0 0 0 2px var(--font-color-white), 0 0 0 3px var(--primary-color-hover),
     0 0 0 5px rgba(65, 137, 230, 0.3);
+
+  --shadow-button: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  --shadow-button-hover: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* weight */
