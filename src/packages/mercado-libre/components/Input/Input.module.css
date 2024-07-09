@@ -1,0 +1,26 @@
+.container {
+  box-shadow: var(--shadow-container-input);
+  border-radius: var(--border-radius-input);
+
+  .input {
+    overflow-wrap: break-word;
+    min-height: 48px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    background-color: var(--font-color-white);
+    color: var(--font-color-black);
+    font-family: var(--font-family-proxima-nova);
+    font-size: var(--font-size-lg);
+    border-radius: var(--border-radius-input);
+    padding: var(--padding-input);
+    line-height: 22px;
+    margin: 0;
+    transition: box-shadow 500ms ease;
+
+    &:focus-visible {
+      box-shadow: var(--shadow-input-focus);
+      outline: none;
+      transition: box-shadow 500ms ease;
+    }
+  }
+}

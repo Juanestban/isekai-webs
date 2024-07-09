@@ -24,6 +24,9 @@
   --font-weight-thin: 300;
   --font-weight-normal: 400;
   --font-weight-semi-bold: 600;
+
+  --border-radius-input: 0.375em;
+  --padding-input: 0.8125em 0.75em;
 }
 
 body {
@@ -57,6 +60,10 @@ body {
 
   --shadow-button: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   --shadow-button-hover: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+
+  --shadow-container-input: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  --shadow-input: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+  --shadow-input-focus: 0 0 0 0.125em var(--primary-color);
 }
 
 /* weight */
