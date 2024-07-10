@@ -6,7 +6,7 @@ import { ThemeProvider } from '../ThemeProvider';
 import { Textarea, type TextareaProps } from './Textarea';
 
 const meta = {
-  title: 'MercadoLibre/Textarea',
+  title: 'Mercado-Libre/Textarea',
   component: Textarea,
   parameters: {
     layout: 'centered',

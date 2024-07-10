@@ -8,7 +8,7 @@ import { iconNames } from './IconNames';
 import { Icon, type IconProps } from './Icon';
 
 const meta = {
-  title: 'MercadoLibre/Icon',
+  title: 'Mercado-Libre/Icon',
   component: Icon,
   parameters: {
     layout: 'centered',

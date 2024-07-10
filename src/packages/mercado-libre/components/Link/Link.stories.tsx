@@ -7,7 +7,7 @@ import { ThemeProvider } from 'packages/meli/components/ThemeProvider';
 import { Link, type LinkProps } from './Link';
 
 const meta = {
-  title: 'MercadoLibre/Link',
+  title: 'Mercado-Libre/Link',
   component: Link,
   parameters: {
     layout: 'centered',

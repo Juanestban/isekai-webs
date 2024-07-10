@@ -5,7 +5,7 @@ import { getContext } from '@/config/decoratorContext';
 import { Image, type ImageProps } from './Image';
 
 const meta = {
-  title: 'MercadoLibre/Image',
+  title: 'Mercado-Libre/Image',
   component: Image,
   parameters: {
     layout: 'centered',

@@ -6,7 +6,7 @@ import { getContext } from '@/config/decoratorContext';
 import { IconButton, type IconButtonProps } from './IconButton';
 
 const meta = {
-  title: 'MercadoLibre/IconButton',
+  title: 'Mercado-Libre/IconButton',
   component: IconButton,
   parameters: {
     layout: 'centered',

@@ -9,7 +9,7 @@ import { HeadingSize } from 'packages/meli/models';
 const sizes: HeadingSize[] = ['lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'];
 
 const meta = {
-  title: 'MercadoLibre/Heading',
+  title: 'Mercado-Libre/Heading',
   component: Heading,
   parameters: {
     layout: 'centered',

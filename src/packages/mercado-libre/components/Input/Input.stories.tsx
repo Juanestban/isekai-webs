@@ -6,7 +6,7 @@ import { getContext } from '@/config/decoratorContext';
 import { Input, type InputProps } from './Input';
 
 const meta = {
-  title: 'MercadoLibre/Input',
+  title: 'Mercado-Libre/Input',
   component: Input,
   parameters: {
     layout: 'centered',

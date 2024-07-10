@@ -7,7 +7,7 @@ import { ThemeProvider } from 'packages/meli/components/ThemeProvider';
 import { Button, ButtonProps } from './Button';
 
 const meta = {
-  title: 'MercadoLibre/Button',
+  title: 'Mercado-Libre/Button',
   component: Button,
   parameters: {
     layout: 'centered',

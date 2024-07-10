@@ -6,7 +6,7 @@ import { ThemeProvider } from 'packages/meli/components/ThemeProvider';
 import { Text, type TextProps } from './Text';
 
 const meta = {
-  title: 'MercadoLibre/Text',
+  title: 'Mercado-Libre/Text',
   component: Text,
   parameters: {
     layout: 'centered',
