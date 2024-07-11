@@ -30,6 +30,8 @@
 }
 
 body {
+  --max-width: 1024px;
+
   /* text colors */
   --font-color-base: #666;
   --font-color-black: rgba(0, 0, 0, 0.89);
@@ -67,6 +69,11 @@ body {
 
   --box-shadow-search: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   --border-color-button-seach: #e6e6e6;
+
+  --bg-primary: #ffe600;
+  --bg-secondary: #ebebeb;
+  --bg-tertiary: #fff;
+  --bg-cuaternary: #3483fa;
 }
 
 /* weight */

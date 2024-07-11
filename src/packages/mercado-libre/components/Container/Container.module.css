@@ -1,0 +1,10 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  width: 100%;
+
+  &.max {
+    --max-width: 1280px;
+  }
+}
