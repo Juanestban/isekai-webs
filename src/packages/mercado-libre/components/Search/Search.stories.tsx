@@ -1,10 +1,10 @@
 import { Meta, StoryFn } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import { Search, type SearchProps } from './Search';
-import { getContext } from '@/config/decoratorContext';
-import { ThemeProvider } from '../ThemeProvider';
 import { Wrapper } from '@/config/Wrapper';
+import { ThemeProvider } from '../ThemeProvider';
+import { getContext } from '@/config/decoratorContext';
+import { Search, type SearchProps } from './Search';
 
 const meta = {
   title: 'Mercado-Libre/Search',

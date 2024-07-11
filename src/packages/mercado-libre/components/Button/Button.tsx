@@ -1,4 +1,4 @@
-import { AriaRole, ComponentProps, Ref } from 'react';
+import { FC, AriaRole, ComponentProps, Ref } from 'react';
 import clsx from 'clsx';
 
 import { TextSize } from 'packages/meli/models';
@@ -19,7 +19,7 @@ interface ButtonProps extends PrimitiveButton {
   fullWidth?: boolean;
 }
 
-const Button = ({
+const Button: FC<ButtonProps> = ({
   innerRef,
   variant = 'solid',
   role = 'primary',
@@ -32,7 +32,7 @@ const Button = ({
   ariaRole,
   children,
   ...props
-}: ButtonProps) => {
+}) => {
   return (
     <button
       ref={innerRef}
