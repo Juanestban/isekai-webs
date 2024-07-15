@@ -19,7 +19,7 @@ interface HeadingProps extends PrimitiveHeading {
 
 const Heading: FC<HeadingProps> = ({
   innerRef,
-  as = 'h1',
+  as = 'h2',
   size = 'lg',
   weight = 'normal',
   color = 'black',
