@@ -1,9 +1,9 @@
 import { Meta, StoryFn } from '@storybook/react';
 
-import { Card, type CardProps } from './Card';
-import { getContext } from '@/config/decoratorContext';
-import { ThemeProvider } from '../ThemeProvider';
 import { Wrapper } from '@/config/Wrapper';
+import { ThemeProvider } from '../ThemeProvider';
+import { getContext } from '@/config/decoratorContext';
+import { Card, type CardProps } from './Card';
 
 const meta = {
   title: 'Mercado-Libre/Card',
