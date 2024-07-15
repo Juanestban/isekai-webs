@@ -1,0 +1,38 @@
+.card {
+  width: 173px;
+  overflow: hidden;
+
+  .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2;
+    line-height: 18px;
+    margin-top: 20px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+  }
+
+  .picture {
+    display: block;
+  }
+
+  .wrapperPrices {
+    margin: 12px 0 12px 0;
+  }
+
+  .priceBefore {
+    text-decoration: line-through;
+  }
+
+  .contentPrices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .discount {
+      text-transform: uppercase;
+    }
+  }
+}
