@@ -18,6 +18,8 @@ const Image: FC<ImageProps> = ({
   loading = 'lazy',
   fit = 'contain',
   fetchPriority = 'auto',
+  width,
+  height,
   withoutPointerEvent,
   className,
   ...props
@@ -27,7 +29,8 @@ const Image: FC<ImageProps> = ({
       ref={innerRef}
       decoding={decoding}
       draggable={!withoutPointerEvent}
-      fetchPriority={fetchPriority}
+      fetchpriority={fetchPriority}
+      style={{ width, height }}
       className={clsx(
         s.image,
         s[`object-${fit}`],

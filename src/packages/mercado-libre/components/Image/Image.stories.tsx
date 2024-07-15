@@ -29,7 +29,7 @@ export const Main: StoryFn<ImageProps> = ({
   src,
   alt,
   decoding,
-  fetchPriority,
+  fetchPriority = 'auto',
   fallback,
   loading,
   fit,

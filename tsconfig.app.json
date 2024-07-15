@@ -22,6 +22,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "types": ["./src/types/global.d.ts"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
