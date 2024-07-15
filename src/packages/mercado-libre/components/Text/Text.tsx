@@ -31,6 +31,7 @@ const Text: FC<TextProps> = ({
   ...props
 }) => {
   const Wrapper = as;
+
   return (
     <Wrapper
       ref={innerRef}
