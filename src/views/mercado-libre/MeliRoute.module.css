@@ -1,0 +1,8 @@
+.root {
+  background-color: var(--bg-secondary);
+  min-height: 100vh;
+
+  .wrapper {
+    --max-width: 1200px;
+  }
+}

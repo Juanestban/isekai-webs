@@ -1,0 +1,121 @@
+.header {
+  --max-width: 1200px;
+
+  background-color: var(--bg-primary);
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 'nav-left-top nav-center-top nav-right-top' 'nav-left-bottom nav-center-bottom nav-right-bottom';
+  grid-template-columns: 162px minmax(340px, 588px) minmax(350px, 390px);
+  grid-template-rows: 40px 28px;
+  column-gap: 20px;
+  row-gap: 12px;
+  padding: 8px 10px 12px 10px;
+
+  .navLeftTop {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    grid-area: nav-left-top;
+  }
+
+  .navCenterTop {
+    grid-area: nav-center-top;
+  }
+
+  .navRightTop {
+    grid-area: nav-right-top;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navLeftBottom {
+    grid-area: nav-left-bottom;
+
+    .buttonLocation {
+      padding: 0px 8px 4px 8px;
+    }
+
+    .textLocation {
+      display: flex;
+      gap: 5px;
+
+      .textLocationWrapper {
+        display: flex;
+        width: fit-content;
+        height: 28px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .textLocation1 {
+          font-size: 12px;
+          line-height: 12px;
+        }
+
+        .textLocation2 {
+          line-height: var(--font-size-sm);
+        }
+      }
+    }
+  }
+
+  .navCenterBottom {
+    grid-area: nav-center-bottom;
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+
+    .buttonCatergories {
+      padding: 0;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:hover {
+        border-color: transparent;
+        background-color: transparent;
+      }
+    }
+
+    .badge {
+      position: relative;
+
+      &::before {
+        content: 'nuevo';
+        display: block;
+        text-transform: uppercase;
+        border-radius: 20px;
+        font-size: 8px;
+        padding: 1px 3px;
+        color: var(--font-color-white);
+        background-color: var(--bg-cuaternary);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 85%;
+      }
+    }
+  }
+
+  .navRightBottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    grid-area: nav-right-bottom;
+
+    .shoppingCar {
+      background-color: transparent;
+      padding: 0;
+      border-color: transparent;
+      box-shadow: none;
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}

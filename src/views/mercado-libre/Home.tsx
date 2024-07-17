@@ -1,5 +1,5 @@
 function Home() {
-  return <>home page: mercado libre</>;
+  return <>home pge</>;
 }
 
 export default Home;
