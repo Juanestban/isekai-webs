@@ -27,7 +27,7 @@ const Search: FC<SearchProps> = ({ innerRef, fullWidth, onSubmit, className, ...
     <form className={clsx(s.search, fullWidth && s.fullWidth)} onSubmit={handleSubmit}>
       <input name="search" ref={innerRef} className={clsx(s.input, className)} {...props} />
       <button type="submit" className={s.searchIconButton}>
-        <Icon name="GoSearch" />
+        <Icon name="GoSearch" size={21} />
       </button>
     </form>
   );

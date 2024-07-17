@@ -90,6 +90,18 @@
       border-color: transparent;
     }
 
+    &.tertiary {
+      border-color: transparent;
+
+      .text {
+        color: var(--font-color-black);
+      }
+
+      &:hover {
+        border-color: var(--ghost-tertiary-border-color);
+      }
+    }
+
     &.disabled {
       background-color: var(--disabled-color);
       border-color: var(--disabled-color);

@@ -56,6 +56,7 @@ body {
   --ghost-color-hover: rgba(52, 131, 250, 0.06);
   --disabled-color: #ccc;
   --disabled-font-color: gray;
+  --ghost-tertiary-border-color: rgba(0, 0, 0, 0.1);
 
   --focus-box-shadow: 0 0 0 2px var(--font-color-white), 0 0 0 3px var(--primary-color-hover),
     0 0 0 5px rgba(65, 137, 230, 0.3);
