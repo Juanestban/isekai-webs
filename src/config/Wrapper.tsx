@@ -1,11 +1,18 @@
 import { PropsWithChildren, CSSProperties } from 'react';
 
-type WrapperProps = PropsWithChildren & {
-  width?: CSSProperties['width'];
-  flexDirection?: CSSProperties['flexDirection'];
-  flexWrap?: CSSProperties['flexWrap'];
-};
+type WrapperProps = PropsWithChildren &
+  Pick<CSSProperties, 'width' | 'flexDirection' | 'flexWrap'> & { style?: CSSProperties };
 
-export const Wrapper = ({ width, flexDirection = 'row', flexWrap, children }: WrapperProps) => {
-  return <div style={{ display: 'flex', flexDirection, flexWrap, gap: 10, width }}>{children}</div>;
+export const Wrapper = ({
+  width,
+  flexDirection = 'row',
+  flexWrap,
+  style,
+  children,
+}: WrapperProps) => {
+  return (
+    <div style={{ ...style, display: 'flex', flexDirection, flexWrap, gap: 10, width }}>
+      {children}
+    </div>
+  );
 };

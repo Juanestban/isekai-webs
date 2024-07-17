@@ -1,3 +1,7 @@
+.link {
+  min-width: 173px;
+}
+
 .card {
   width: 173px;
   overflow: hidden;

@@ -41,7 +41,7 @@ const Card: FC<CardProps> = memo(
     ...props
   }) => {
     return (
-      <Link to={link} variant="secondary" external={external}>
+      <Link to={link} variant="secondary" className={s.link} external={external}>
         <div ref={innerRef} className={clsx(s.card, className)} {...props}>
           <picture className={s.picture}>
             <Image src={src} alt={alt} width={150} height={150} fit="contain" />
