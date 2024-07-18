@@ -110,6 +110,10 @@
     grid-area: nav-right-bottom;
 
     .shoppingCar {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: transparent;
       padding: 0;
       border-color: transparent;

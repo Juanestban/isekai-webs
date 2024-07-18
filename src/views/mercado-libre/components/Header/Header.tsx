@@ -1,13 +1,5 @@
-import {
-  Image,
-  Button,
-  Text,
-  Link,
-  Container,
-  Icon,
-  Search,
-  IconButton,
-} from '@/packages/mercado-libre';
+import { Image, Button, Text, Link, Container, Icon, Search } from '@/packages/mercado-libre';
+import { ShoppingButton } from '../ShoppingButton';
 
 import s from './Header.module.css';
 
@@ -21,7 +13,6 @@ const Header = () => {
           </Link>
         </div>
         <div className={s.navLeftBottom}>
-          {/* change this Link by Button with another variant/role */}
           <Button variant="ghost" role="tertiary" className={s.buttonLocation}>
             <span className={s.textLocation}>
               <Icon name="GoLocation" color="var(--font-color-black)" size={23} />
@@ -82,12 +73,7 @@ const Header = () => {
           <Link variant="secondary" size="sm">
             Mis Compras
           </Link>
-          <IconButton
-            icon="GoArchive"
-            size={16}
-            className={s.shoppingCar}
-            color="var(--font-color-black)"
-          />
+          <ShoppingButton className={s.shoppingCar} fontSize={16} />
         </div>
       </Container>
     </header>
