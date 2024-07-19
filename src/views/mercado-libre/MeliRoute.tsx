@@ -14,6 +14,7 @@ function MeliRoute() {
           <main>
             <Outlet />
           </main>
+          {/* footer */}
         </Container>
       </div>
     </ThemeProvider>

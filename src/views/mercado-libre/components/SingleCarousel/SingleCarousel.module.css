@@ -1,0 +1,29 @@
+.sectionCards {
+  width: var(--max-width);
+  overflow: hidden;
+  position: relative;
+
+  .cards {
+    width: fit-content;
+    display: flex;
+    will-change: transform;
+    transition: transform 500ms ease;
+    gap: 16px;
+    height: 286px;
+  }
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+
+  &.left {
+    left: -35px;
+  }
+
+  &.right {
+    right: -15px;
+  }
+}

@@ -1,5 +1,6 @@
 .wrap {
-  padding-top: 350px;
+  --max-width: 1180px;
+  padding-top: 360px;
 
   .container {
     position: relative;
