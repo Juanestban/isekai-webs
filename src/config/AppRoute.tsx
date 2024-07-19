@@ -2,7 +2,9 @@ import { lazy, PropsWithChildren, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 const MeliRoute = /** @__lazy_component */ lazy(() => import('@/views/mercado-libre/MeliRoute'));
-const MeliHomePage = /** @__lazy_component */ lazy(() => import('@/views/mercado-libre/Home'));
+const MeliHomePage = /** @__lazy_component */ lazy(
+  () => import('@/views/mercado-libre/pages/Home'),
+);
 const AmazonPage = /** @__lazy_component */ lazy(() => import('@/views/amazon/Home'));
 
 const AppRoute = ({ children }: PropsWithChildren) => {

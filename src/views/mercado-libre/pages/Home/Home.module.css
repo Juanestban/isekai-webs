@@ -1,0 +1,9 @@
+.wrap {
+  padding-top: 350px;
+
+  .container {
+    position: relative;
+
+    z-index: 3;
+  }
+}
