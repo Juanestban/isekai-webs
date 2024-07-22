@@ -7,4 +7,48 @@
 
     z-index: 3;
   }
+
+  .section {
+    max-width: var(--max-width);
+    position: relative;
+    background-color: var(--bg-tertiary);
+    margin-top: 42px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: var(--shadow-button);
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 19px;
+
+      &.bg {
+        --deg: 90deg;
+        --primary-color-disneyplus: #a90f90;
+        --percentage: 55%;
+        --secondary-color-disneyplus: #0c1a51;
+
+        background: linear-gradient(
+          var(--deg),
+          var(--primary-color-disneyplus) var(--percentage),
+          var(--secondary-color-disneyplus) 100%
+        );
+      }
+    }
+  }
+
+  .sectionv2 {
+    padding: 0;
+    overflow: hidden;
+
+    .header {
+      padding: 20px;
+    }
+
+    .body {
+      padding: 20px;
+      padding-top: 0;
+    }
+  }
 }

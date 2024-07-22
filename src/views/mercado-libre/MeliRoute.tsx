@@ -15,6 +15,7 @@ function MeliRoute() {
             <Outlet />
           </main>
           {/* footer */}
+          <footer style={{ marginTop: 10, padding: 10 }}>footer!</footer>
         </Container>
       </div>
     </ThemeProvider>
